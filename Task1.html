@@ -1,6 +1,7 @@
 <html>
     <head>
-        <title>Sign Up Form</title>
+        <title>Sign Up</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
         <style>
             @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
             .row {
@@ -99,12 +100,37 @@
 
             .sideHeading
             {
-                padding: 14px 8px;
+                padding: 12px 8px;
                 text-align: end;
                 font-size: larger;
                 margin: 2px;
             }
 
+            /* floating button CSS*/
+            *{padding:0;margin:0;}
+
+            body{
+                font-family:Verdana, Geneva, sans-serif;
+                font-size:18px;
+                background-color:#CCC;
+            }
+
+            .float{
+                position:fixed;
+                width:60px;
+                height:60px;
+                bottom:40px;
+                left:40px;
+                background-color:#FEE600;
+                color:red;
+                border-radius:50px;
+                text-align:center;
+                box-shadow: 2px 2px 3px #999;
+            }
+
+            .my-float{
+                margin-top:22px;
+            }
         </style>
     </head>
     <body>
@@ -183,5 +209,8 @@
                   </div>
             </div>
         </div>
+        <a href="Index.html" class="float">
+            <i class="fa fa-arrow-left my-float"></i>
+        </a>
     </body>
 </html>

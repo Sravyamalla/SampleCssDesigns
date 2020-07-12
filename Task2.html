@@ -1,7 +1,9 @@
 <html>
     <head>
-        <title>Home</title>
+        <title>Template</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
         <style>
+            @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
             .grid
             {
                 padding: 10px;
@@ -131,6 +133,23 @@
                 padding:4px;
             }
 
+            .float{
+                position:fixed;
+                width:60px;
+                height:60px;
+                bottom:40px;
+                left:40px;
+                background-color:#FEE600;
+                color:red;
+                border-radius:50px;
+                text-align:center;
+                box-shadow: 2px 2px 3px #999;
+            }
+
+            .my-float{
+                margin-top:22px;
+            }
+
         </style>
     </head>
     <body>
@@ -217,6 +236,10 @@
                 starter &copy;<a href="lacodeid.com">locodeid.com</a> 2017
             </p>
         </div>
+
         </div>
+        <a href="Index.html" class="float">
+            <i class="fa fa-arrow-left my-float"></i>
+        </a>
     </body>   
 </html>
