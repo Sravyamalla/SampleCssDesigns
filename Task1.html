@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Sign Up Form</title>
+        <style>
+            @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+            .row {
+                display: flex;
+            }
+
+            .column {
+            flex: 50%;
+            }
+
+            input[type="text"] {
+                width: 50%;
+                border: 2px solid #aaa;
+                border-radius: 4px;
+                margin: 8px 0;
+                outline: none;
+                padding: 8px;
+                box-sizing: border-box;
+                transition: 0.3s;
+            }
+
+            input[type="text"]:focus {
+                border-color: dodgerBlue;
+                box-shadow: 0 0 8px 0 dodgerBlue;
+            }
+
+            select{
+                width: 50%;
+                border: 2px solid #aaa;
+                border-radius: 4px;
+                margin: 8px 0;
+                outline: none;
+                color: #757474;
+                padding: 8px 8px 8px 34px;
+                box-sizing: border-box;
+                transition: 0.3s;
+                text-align: right;
+            }
+
+            select:focus{
+                border-color: dodgerBlue;
+                box-shadow: 0 0 8px 0 dodgerBlue;
+                text-align: right;
+            }
+
+            option{
+                width: 50%;
+                border: 2px solid #aaa;
+                border-radius: 4px;
+                margin: 8px 0;
+                outline: none;
+                padding: 8px;
+                box-sizing: border-box;
+                transition: 0.3s;
+                text-align: right;
+            }
+
+            option:focus{
+                border-color: dodgerBlue;
+                box-shadow: 0 0 8px 0 dodgerBlue;
+                text-align: right;
+            }
+
+            .inputWithIcon input[type="text"] {
+                padding-left: 40px;
+            }
+
+            .inputWithIcon {
+                position: relative;
+            }
+
+            .inputWithIcon i {
+                position: absolute;
+                left: 0;
+                top: 8px;
+                padding: 9px 8px;
+                color: #aaa;
+                transition: 0.3s;
+            }
+
+            .inputWithIcon input[type="text"]:focus + i {
+                color: dodgerBlue;
+            }
+
+            .inputWithIcon.inputIconBg i {
+                background-color: #aaa;
+                color: #fff;
+                padding: 9px 4px;
+                border-radius: 4px 0 0 4px;
+            }
+
+            .inputWithIcon.inputIconBg input[type="text"]:focus + i {
+                color: #fff;
+                background-color: dodgerBlue;
+            }
+
+            .sideHeading
+            {
+                padding: 14px 8px;
+                text-align: end;
+                font-size: larger;
+                margin: 2px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="row" style="margin: 7% auto 7% auto;">
+            <div class="column">
+                <div class="sideHeading">
+                    Full Name
+                </div>
+                <div class="sideHeading">
+                    Address Line 1
+                </div>
+                <div class="sideHeading">
+                    Address Line 2
+                </div>
+                <div class="sideHeading">
+                    City
+                </div>
+                <div class="sideHeading">
+                    State/Province/Region
+                </div>
+                <div class="sideHeading">
+                    Postal Code/ZIP
+                </div>
+                <div class="sideHeading">
+                    Country
+                </div>
+                <div class="sideHeading">
+                    Email
+                </div>
+                <div class="sideHeading">
+                    Phone Number
+                </div>
+            </div>
+            <div class="column">
+                <div class="inputWithIcon inputIconBg">
+                    <input type="text" placeholder="Full Name">
+                    <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                  </div>
+                  <div class="inputWithIcon inputIconBg">
+                    <input type="text" placeholder="Address Line 1">
+                    <i class="fa fa-home fa-lg fa-fw" aria-hidden="true"></i>
+                  </div>
+                  <div class="inputWithIcon inputIconBg">
+                    <input type="text" placeholder="Address Line 2">
+                    <i class="fa fa-home fa-lg fa-fw" aria-hidden="true"></i>
+                  </div>
+                  <div class="inputWithIcon inputIconBg">
+                    <input type="text" placeholder="City">
+                    <i class="fa fa-home fa-lg fa-fw" aria-hidden="true"></i>
+                  </div>
+                  <div class="inputWithIcon inputIconBg">
+                    <input type="text" placeholder="State/Province/Region">
+                    <i class="fa fa-home fa-lg fa-fw" aria-hidden="true"></i>
+                  </div>
+                  <div class="inputWithIcon inputIconBg">
+                    <input type="text" placeholder="Postal Code/ZIP">
+                    <i class="fa fa-home fa-lg fa-fw" aria-hidden="true"></i>
+                  </div>
+                  <div class="inputWithIcon inputIconBg">
+                    <!--<input type="text" placeholder="A really long option to push the menu over">-->
+                    <select id="cars" name="cars">
+                        <option value="volvo" tooltip="A really long option to push the menu over">A really long option to push the menu over</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    <i class="fa fa-navicon fa-lg fa-fw" aria-hidden="true"></i>
+                  </div>
+                  <div class="inputWithIcon inputIconBg">
+                    <input type="text" placeholder="Email">
+                    <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                  </div>
+                  <div class="inputWithIcon inputIconBg">
+                    <input type="text" placeholder="Phone Number">
+                    <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+                  </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,162 @@
+<html>
+</body>
+<head>
+    <title>GridView</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+            background-color: #f1f1f1;
+            width:400px;
+            margin: 10px;
+            padding-bottom: 10px;
+        }
+
+        .projectPhoto{
+            height:250px;
+            background-color: black;
+            padding: 0;
+        }
+
+        .productTitle{
+            margin: 10px;
+            font-size: 25px;
+        }
+
+        .productDescription{
+            text-align: left;
+            margin: 10px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+        }
+
+        .price{
+            font-size: 20px;
+            padding-left: 10px;
+        }
+
+        input[type="button"]{
+            background-color: forestgreen;
+            font-size: 15px;
+            border-width: 0px;
+            padding:5px;
+            color:ghostwhite;
+        }
+        /* Responsive columns - one column layout (vertical) on small screens */
+        @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="card">
+            <div class="projectPhoto">
+            </div>
+            <p class="productTitle">Product title</p>
+            <p class="productDescription">Product title...Lorem inpsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinicidunt ut laoreet dolore magna aliquam erat volupat</p>
+            <div class="row">
+                <div class="column price">
+                    $21.00
+                </div>
+                <div class="column">
+                    <input type="button" value="Add to Cart"/>
+                </div>
+           </div>
+        </div>
+        <div class="card">
+            <div class="projectPhoto">
+            </div>
+            <p class="productTitle">Product title</p>
+            <p class="productDescription">Product title...Lorem inpsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinicidunt ut laoreet dolore magna aliquam erat volupat</p>
+            <div class="row">
+                <div class="column price">
+                    $21.00
+                </div>
+                <div class="column">
+                    <input type="button" value="Add to Cart"/>
+                </div>
+           </div>
+        </div>
+        <div class="card">
+            <div class="projectPhoto">
+            </div>
+            <p class="productTitle">Product title</p>
+            <p class="productDescription">Product title...Lorem inpsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinicidunt ut laoreet dolore magna aliquam erat volupat</p>
+            <div class="row">
+                <div class="column price">
+                    $21.00
+                </div>
+                <div class="column">
+                    <input type="button" value="Add to Cart"/>
+                </div>
+           </div>
+        </div>
+        <div class="card">
+            <div class="projectPhoto">
+            </div>
+            <p class="productTitle">Product title</p>
+            <p class="productDescription">Product title...Lorem inpsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinicidunt ut laoreet dolore magna aliquam erat volupat</p>
+            <div class="row">
+                <div class="column price">
+                    $21.00
+                </div>
+                <div class="column">
+                    <input type="button" value="Add to Cart"/>
+                </div>
+           </div>
+        </div>
+        <div class="card">
+            <div class="projectPhoto">
+            </div>
+            <p class="productTitle">Product title</p>
+            <p class="productDescription">Product title...Lorem inpsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinicidunt ut laoreet dolore magna aliquam erat volupat</p>
+            <div class="row">
+                <div class="column price">
+                    $21.00
+                </div>
+                <div class="column">
+                    <input type="button" value="Add to Cart"/>
+                </div>
+           </div>
+        </div>
+        <div class="card">
+            <div class="projectPhoto">
+            </div>
+            <p class="productTitle">Product title</p>
+            <p class="productDescription">Product title...Lorem inpsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinicidunt ut laoreet dolore magna aliquam erat volupat</p>
+            <div class="row">
+                <div class="column price">
+                    $21.00
+                </div>
+                <div class="column">
+                    <input type="button" value="Add to Cart"/>
+                </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
